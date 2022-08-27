@@ -93,7 +93,8 @@ let lines = []
 
 function setup() {
   pixelDensity(2);
-  createCanvas(500, 500);
+  let cnv = createCanvas(windowWidth, 300);
+  cnv.parent('theContainer');
   
   noFill();
   strokeWeight(10.0);
