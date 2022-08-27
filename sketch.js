@@ -73,7 +73,7 @@ class NestLine {
   }
   
   addMouseForce() {
-    let coef = 0.05;
+    let coef = 0.08;
     
     let lineX = this.radius*cos(this.positionAngle);
     let lineY = this.radius*sin(this.positionAngle);
@@ -93,7 +93,7 @@ let lines = []
 
 function setup() {
   pixelDensity(2);
-  let cnv = createCanvas(windowWidth, 300);
+  let cnv = createCanvas(350, 350);
   cnv.parent('theContainer');
   
   noFill();
